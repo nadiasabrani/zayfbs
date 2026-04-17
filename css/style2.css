@@ -1,0 +1,103 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  background: #3d4b1f;
+  padding: 15px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("../img/olive.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 400px;
+  gap: 53px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(5px); 
+  background: rgba(0, 0, 0, 0.2); 
+  z-index: 0;
+}
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero input {
+  width: 500px;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+}
+
+
+.hero input::placeholder {
+  color: #333;
+  font-size: 16px;
+}
+
+.btn {
+  width: fit-content;
+  background: #a8c77b;
+  padding: 12px 40px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #8faa60;
+}

@@ -1,0 +1,123 @@
+ 
+ body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E3DEB0; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif; 
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3c9250;
+  padding: 15px 40px;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.products {
+  padding: 60px 80px;
+  background: #f9f9f9;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.top h1 {
+  font-size: 32px;
+  color: #279752;
+}
+
+.add-btn {
+  background: #5b702d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #a8c77b;
+  color: black;
+  transform: scale(1.05);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  color: gray;
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cart {
+  display: inline-block;
+  background: #6c8c3a;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.delete {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}

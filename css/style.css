@@ -1,0 +1,137 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E3DEB0; 
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1e8a14;
+  color: white;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'IM Fell Great Primer', serif;
+}
+.hero {
+  height: 460px;
+  background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/WhatsApp Image 2026-04-13 at 12.40.04.jpeg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+h1.hero-text {
+  font-size: 46px;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(250, 248, 248, 0.7);
+  font-family: 'IM Fell Great Primer', serif;
+}
+.yellow {
+  color: #FFD700;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  font-family: 'IM Fell Great Primer', serif;
+}
+.btn {
+
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  padding: 12px 35px;
+  border-radius: 18px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.5);
+}
+
+h2 {
+  color: #248c1b; 
+  text-align: center;
+}
+.product-list {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+}
+.product-item {
+  width: 200px;
+  text-align: center;
+}
+h3 {
+  color: #66bb6a;
+}
+.about-content {
+  text-align: center;
+  background: #c2fdb1;
+  padding: 20px;
+  border-radius: 100px;
+}
+.about-content img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 100%;
+  border-radius: 10px;
+}
+.about-content p {
+  font-size: 11px;
+  color: #121212;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+  color: #555;
+}
+.btn {
+  display: block;
+  margin: 30px auto;
+  width: fit-content;
+}
+.footer {
+  background-color: #248c1b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer .nav-links {
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+p1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+.footer .nav-links li a {
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
