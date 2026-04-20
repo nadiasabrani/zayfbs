@@ -12,12 +12,10 @@
     <header class="nav">
         <div class="logo">🌿 ZayFbs</div>
         <ul class="nav-links">
-            <li><a href="#">accueil</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#"> 🛒 </a>
-            </li>
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="nos produit.html">Products</a></li>
+            <li><a href="admine.html">Contact</a></li>
+           <li><a href="panier.html"> 🛒 <span id="count">0</span></a></li>
         </ul>
 
 </header>
@@ -27,69 +25,73 @@
     <span class="yellow">100% naturelle</span> <br>
     du Maroc
   </h1>
-  <a href="#" class="btn">Découvrir</a>
+ <a href="#" class="btn" id="discover">Découvrir</a>
+  
 </section>
 
     <section class="products">
         <h2> Nos Produits </h2>
         <div class="product-list">
             <div class="product-item">
-                <img src="product1.jpg" alt="Product 1">
-                <h3>Huile Extra vierge  </h3>
+                <img src="" alt="Huile Extra vierge" loading="lazy">
+                <h3>Huile Extra vierge</h3>
                 <p>120 DH</p>
-                <a href="#" class="btn">Acheter</a>
+                <button class="btn acheter" data-name="Huile Extra vierge" data-price="120">Acheter</button>
             </div>
             <div class="product-item">
-                <img src="product2.jpg" alt="Product 2">
-                <h3>Huile d'olive  </h3>
+                <img src="" alt="Huile d'olive" loading="lazy">
+                <h3>Huile d'olive</h3>
                 <p>150 DH</p>
-                <a href="#" class="btn">Acheter</a>
+                <button class="btn acheter" data-name="Huile d'olive" data-price="150">Acheter</button>
             </div>
             <div class="product-item">
-                <img src="product3.jpg" alt="Product 3">
-                <h3>Huile de colza  </h3>
+                <img src="" alt="Huile de colza" loading="lazy">
+                <h3>Huile de colza</h3>
                 <p>180 DH</p>
-                <a href="#" class="btn">Acheter</a>
+                <button class="btn acheter" data-name="Huile de colza" data-price="180">Acheter</button>
             </div>
         </div>
     </section>
     <section class="about">
         <h2>Découvrez Nos Fermes et Notre Savoir-Faire</h2>
         <div class="cards">
-
         <div class="about-content">
-            <img src="about.jpg" alt="About Us">
+            <img src="" alt="Nos Fermes Locales" loading="lazy">
             <h3>🌿Nos Fermes Locales</h3>
             <p>Nos fermes sont situées dans les régions les plus fertiles du Maroc, où nous cultivons des olives de qualité supérieure. Chaque parcelle est gérée avec soin et attention, garantissant la production d'huiles d'olive exceptionnelles.</p>
         </div>
             <div class="about-content">
-                <img src="about2.jpg" alt="About Us">
+                <img src="" alt="Certifications" loading="lazy">
                 <h3>🛡️Certifications de Qualité</h3>
                 <p>Nous sommes fiers de nos certifications de qualité, qui attestent de notre engagement envers l'excellence. Nos huiles d'olive sont certifiées biologiques et respectent les normes les plus strictes en matière de production durable.</p>
             </div>
             <div class="about-content">
-                <img src="about3.jpg" alt="About Us">
+                <img src="" alt="Savoir-Faire" loading="lazy">
                 <h3>👩‍🌾Savoir-Faire Traditionnel</h3>
                 <p>Notre savoir-faire traditionnel est transmis de génération en génération. Nous combinons les méthodes ancestrales avec les technologies modernes pour produire des huiles d'olive de la plus haute qualité, riches en saveurs et en bienfaits pour la santé.</p>
         </div>
     </section>
-    <a href="#" class="btn"> + ajouter un produit</a>
+        <a href="nouveau produit.html" class="btn add"> + ajouter un produit</a>
+    
     <section>   
         <h2>Qualite & bio certifie</h2>
         <p>Nos huiles sont certifiées par les organismes de contrôle les plus rigoureux, garantissant une pureté totale et un respect strict des normes de production biologique et durable</p>
-         <img src="about2.jpg" alt="About Us">
-          <img src="about2.jpg" alt="About Us">
-           <img src="about2.jpg" alt="About Us">
+       <div class="images">
+  <img src="./img/olive.jpg" alt="Certification" loading="lazy">
+  <img src="./img/olive.jpg" alt="Certification" loading="lazy">
+  <img src="./img/olive.jpg" alt="Certification" loading="lazy">
+</div>
     </section>
     <section>
         <h2>Contactez-Nous</h2>
         <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter. Nous sommes là pour vous aider et répondre à toutes vos préoccupations.</p>
 
-        <a href="#" class="btn">Contactez-Nous</a>
+        <a href="#" class="btn" id="btn">Contactez-Nous</a>
+        
     </section>
 
-    <footer class="footer">
-        <p1>&copy; 2024 Zay-Fbs. All rights reserved.</p1>
+    <footer id="foot" class="footer">
+        <p>&copy; 2024 Zay-Fbs. All rights reserved.</p>
         <ul class="nav-links">
             <li><a href="#">accueil</a></li>
             <li><a href="#">Products</a></li>
@@ -97,6 +99,8 @@
             <li><a href="#">Contact</a></li>
             <li><a href="#">panier</a>
             </li>
+        </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

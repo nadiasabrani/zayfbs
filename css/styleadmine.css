@@ -57,6 +57,7 @@ nav {
   overflow: hidden;
 }
 
+
 .hero::before {
   content: "";
   position: absolute;
@@ -64,6 +65,7 @@ nav {
   backdrop-filter: blur(5px); 
   background: rgba(0, 0, 0, 0.2); 
   z-index: 0;
+ 
 }
 .hero * {
   position: relative;
