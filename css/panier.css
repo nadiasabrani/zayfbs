@@ -93,3 +93,16 @@ h1, h3 {
   text-align: center;
   margin: 20px 0;
 }
+#commander {
+  padding: 12px 20px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+#commander:hover {
+  background: darkgreen;
+}
