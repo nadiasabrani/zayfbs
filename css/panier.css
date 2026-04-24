@@ -1,108 +1,127 @@
-/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: #e5dddd;
-  color: #333;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #123f1f, #6aa84f);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* ===== NAV ===== */
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: rgb(29, 147, 63);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 15px 50px;
+  background: #1e4d2b;
+  color: white;
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 22px;
   font-weight: bold;
+  font-size: 20px;
+  color: white;
 }
 
 .nav-links {
-  display: flex;
-  gap: 20px;
   list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #333;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 15px;
-  background: #2e7d32;
   color: white;
-  border-radius: 8px;
   text-decoration: none;
-  cursor: pointer;
+  font-size: 14px;
   transition: 0.3s;
-  border: none;
 }
 
-.btn:hover {
-  background: #1b5e20;
+.nav-links a:hover {
+  color: #6aa84f;
 }
 
-.products {
-  padding: 40px;
-}
-
-.product-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.product-item {
+/* ===== PANIER ===== */
+.panier {
+  margin: 100px auto 40px;
+  width: 90%;
+  max-width: 600px;
   background: white;
-  padding: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.panier h1 {
+  color: #1e4d2b;
+  margin-bottom: 20px;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.product-item img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-#panierList {
-  padding: 20px;
-}
-
-#panierList div {
-  background: white;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 8px;
+/* ===== ITEMS ===== */
+.item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
 }
 
-h1, h3 {
-  text-align: center;
-  margin: 20px 0;
+.item p {
+  font-size: 14px;
+  color: #333;
 }
-#commander {
-  padding: 12px 20px;
-  background: green;
-  color: white;
+
+.item button {
+  background: #fdecea;
+  color: #c0392b;
   border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
   cursor: pointer;
-  margin-top: 15px;
-  border-radius: 5px;
+  font-size: 13px;
+  transition: 0.3s;
 }
 
-#commander:hover {
-  background: darkgreen;
+.item button:hover {
+  background: #c0392b;
+  color: white;
+}
+
+/* ===== TOTAL ===== */
+.panier > p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e4d2b;
+  text-align: right;
+}
+
+/* ===== BTN COMMANDER ===== */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: #1e4d2b;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #6aa84f;
 }

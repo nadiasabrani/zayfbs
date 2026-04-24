@@ -1,17 +1,17 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const products = [
-  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 150 },
-  { name: "Gaade bouteille d'oire", desc: "Lorem ipsum dolor sit amet.", price: 200 },
-  { name: "Coffret cadeau d'huile", desc: "Lorem ipsum dolor sit amet.", price: 180 },
-  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 120 },
-  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 150 },
-  { name: "Gaade bouteille d'oire", desc: "Lorem ipsum dolor sit amet.", price: 200 },
-  { name: "Coffret cadeau d'huile", desc: "Lorem ipsum dolor sit amet.", price: 180 },
-  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 120 },
-  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 150 },
-  { name: "Gaade bouteille d'oire", desc: "Lorem ipsum dolor sit amet.", price: 200 },
-  { name: "Coffret cadeau d'huile", desc: "Lorem ipsum dolor sit amet.", price: 180 },
+  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 150, img: "./img/zit1.jpg" },
+  { name: "Gaade bouteille d'oire", desc: "Lorem ipsum dolor sit amet.", price: 200, img: "./img/zit2.jpg" },
+  { name: "Coffret cadeau d'huile", desc: "Lorem ipsum dolor sit amet.", price: 170, img: "./img/zit3.jpg" },
+  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 120, img: "./img/zit4.jpg" },
+  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 139, img: "./img/zit5.jpg" },
+  { name: "Gaade bouteille d'oire", desc: "Lorem ipsum dolor sit amet.", price: 100, img: "./img/zit6.jpg" },
+  { name: "Coffret cadeau d'huile", desc: "Lorem ipsum dolor sit amet.", price: 180, img: "./img/zit7.jpg" },
+  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 120, img: "./img/zit8.jpg" },
+  { name: "Huile Bio Premium 1L", desc: "Lorem ipsum dolor sit amet.", price: 145, img: "./img/zit9.jpg" },
+  { name: "Gaade bouteille d'oire", desc: "Lorem ipsum dolor sit amet.", price: 230, img: "./img/zit10.jpg" },
+  { name: "Coffret cadeau d'huile", desc: "Lorem ipsum dolor sit amet.", price: 190, img: "./img/zit11.jpg" },
 ];
 
 function renderProducts() {
@@ -25,7 +25,7 @@ function renderProducts() {
     card.classList.add("card");
 
     card.innerHTML = `
-      <img src="" alt="${product.name}">
+      <img src="${product.img}" alt="${product.name}">
       <h3>${product.name}</h3>
       <p>${product.desc}</p>
       <span class="price">${product.price} DH</span>
@@ -53,12 +53,8 @@ function addToCart(name, price) {
   notification.style.cssText = "position:fixed;top:20px;right:20px;background:green;color:white;padding:10px;border-radius:5px;transform:translateX(400px);transition:transform 0.3s;z-index:1000;";
   notification.textContent = `${name} ajouté au panier!`;
   document.body.appendChild(notification);
-  setTimeout(() => {
-    notification.style.transform = "translateX(0)";
-  }, 10);
-  setTimeout(() => {
-    notification.remove();
-  }, 3000);
+  setTimeout(() => { notification.style.transform = "translateX(0)"; }, 10);
+  setTimeout(() => { notification.remove(); }, 3000);
 }
 
 function removeItem(index) {
